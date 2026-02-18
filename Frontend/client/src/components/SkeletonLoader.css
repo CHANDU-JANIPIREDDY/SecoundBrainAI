@@ -1,0 +1,293 @@
+/* ============================================
+   Skeleton Loader Styles
+   Professional Loading Animation
+   ============================================ */
+
+/* ----------------------------
+   Skeleton Layout
+   ---------------------------- */
+.skeleton-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0;
+}
+
+.skeleton-container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 24px;
+}
+
+/* ----------------------------
+   Shimmer Animation
+   ---------------------------- */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.skeleton-base {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 8px;
+}
+
+/* ----------------------------
+   Navbar Skeleton
+   ---------------------------- */
+.skeleton-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+.skeleton-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skeleton-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.skeleton-logo-text {
+  width: 150px;
+  height: 24px;
+}
+
+.skeleton-nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.skeleton-nav-link {
+  width: 80px;
+  height: 36px;
+}
+
+/* ----------------------------
+   Hero Section Skeleton
+   ---------------------------- */
+.skeleton-hero {
+  text-align: center;
+  padding: 40px 0 80px;
+}
+
+.skeleton-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skeleton-hero-title {
+  width: 80%;
+  height: 64px;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+}
+
+.skeleton-hero-subtitle {
+  width: 60%;
+  height: 24px;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+}
+
+.skeleton-hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.skeleton-btn {
+  height: 48px;
+  border-radius: 10px;
+}
+
+.skeleton-btn-primary {
+  width: 160px;
+}
+
+.skeleton-btn-outline {
+  width: 180px;
+}
+
+/* ----------------------------
+   Features Section Skeleton
+   ---------------------------- */
+.skeleton-features {
+  padding: 60px 0;
+}
+
+.skeleton-section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.skeleton-section-title {
+  width: 50%;
+  height: 48px;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+}
+
+.skeleton-section-subtitle {
+  width: 40%;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.skeleton-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skeleton-feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.skeleton-feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.skeleton-feature-title {
+  width: 70%;
+  height: 24px;
+  margin: 0 auto 16px;
+  border-radius: 8px;
+}
+
+.skeleton-feature-text {
+  width: 90%;
+  height: 16px;
+  margin: 0 auto 12px;
+  border-radius: 6px;
+}
+
+.skeleton-feature-text.short {
+  width: 60%;
+}
+
+/* ----------------------------
+   Responsive
+   ---------------------------- */
+@media (max-width: 1024px) {
+  .skeleton-hero-title {
+    width: 90%;
+    height: 48px;
+  }
+
+  .skeleton-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .skeleton-container {
+    padding: 0 20px;
+  }
+
+  .skeleton-navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skeleton-nav-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .skeleton-hero-title {
+    width: 100%;
+    height: 36px;
+  }
+
+  .skeleton-hero-subtitle {
+    width: 90%;
+    height: 18px;
+  }
+
+  .skeleton-hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skeleton-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .skeleton-section-title {
+    width: 80%;
+    height: 36px;
+  }
+
+  .skeleton-section-subtitle {
+    width: 70%;
+    height: 18px;
+  }
+
+  .skeleton-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skeleton-feature-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skeleton-logo-text {
+    width: 120px;
+  }
+
+  .skeleton-nav-link {
+    width: 60px;
+    height: 32px;
+  }
+
+  .skeleton-hero-title {
+    height: 32px;
+  }
+
+  .skeleton-feature-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
