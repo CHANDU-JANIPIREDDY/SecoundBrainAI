@@ -280,8 +280,8 @@ cd Backend
 npm install
 
 # Create .env file
-echo "MONGO_URI=mongodb+srv://chandu:chandu104@cluster0.6kcjvzg.mongodb.net/?appName=Cluster0" > .env
-echo "OPENROUTER_API_KEY=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" >> .env
+echo "MONGO_URI=ONGODB_KEY" > .env
+echo "OPENROUTER_API_KEY=OPENROUTER_KEY" >> .env
 
 # Start development server
 npm run dev
